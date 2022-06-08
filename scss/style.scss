@@ -1,10 +1,36 @@
-@import "include/_variables.scss";
+// @import "include/_variables.scss";
 @import "include/_rwd.scss";
-@import "include/_fonts.scss";
+// @import "include/_fonts.scss";
 @import "include/_normal.scss";
 
 @import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC&display=swap");
 
+@media (min-width: 1920px) {
+    .container {
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+}
+
+h2 {
+    position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            background: url(../images/icon-h.svg) no-repeat;
+            width: 100px;
+            height: 100px;
+            top: -27px;
+            left: -42px;
+            z-index: -1;
+        }
+}
+.contact h2 {
+    &::before {
+        left: 43.5%;
+    }
+}
 
 // header
 .header {
@@ -19,6 +45,7 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+
         &::after {
             content: none;
         }
@@ -31,6 +58,7 @@
 
             li {
                 display: inline-block;
+
                 +li {
                     border-left: 1px solid #fff;
                 }
@@ -47,15 +75,16 @@
 }
 
 // about
-.about  {
+.about {
     background: url(../images/company.jpg) no-repeat top right;
     position: relative;
     top: -50px;
     padding: 200px 0;
     z-index: -1;
+
     .wrap {
         .txt {
-            width: 800px;
+            width: 54%;
         }
     }
 }
@@ -64,35 +93,43 @@
 .feature {
     background: url(../images/feature.jpg) no-repeat top 126px left;
     padding: 30px 0 60px;
+
     .txt {
-        width: 930px;
-        padding-left: 671px;
+        width: 54%;
+        margin-left: auto;
+
         .tab {
             font-size: 18px;
 
             h3 {
                 margin: 50px 0 15px;
             }
+
             table {
                 margin-bottom: 30px;
+
                 thead {
                     tr {
                         th {
                             background: #535353;
                             color: #fff;
-                            padding: 15px 0;
                             font-size: 18px;
+                            padding: 15px 24px;
+                            text-align: center;
                         }
                     }
                 }
+
                 tbody {
                     tr {
                         &:nth-child(even) {
                             background: #EEEDEC;
                         }
+
                         &:nth-child(odd) {
                             background: #fff;
                         }
+
                         td {
                             padding: 12px 15px;
 
@@ -105,17 +142,22 @@
                     }
                 }
             }
+
             .feature-btn {
                 text-align: center;
+
                 .btn {
                     a {
                         padding: 15px 45px;
                     }
                 }
+
                 .btn-default {
                     display: inline-block;
                     padding: 15px 0;
                     margin: 15px;
+                    border: 0;
+
                     a {
                         background: #F6AB00;
                         color: #fff;
@@ -132,11 +174,13 @@
         background: url(../images/pro_bg.jpg) no-repeat;
         text-align: center;
         padding: 40px 500px;
+
         .pro-app-title-bg {
             background-color: rgba(255, 255, 255, 0.8);
             padding: 30px 100px;
         }
     }
+
     .pro-app-item {
         >div {
             margin: 30px 0;
@@ -144,21 +188,25 @@
             width: 100%;
             height: 100%;
         }
+
         .app-item-til-r {
             position: absolute;
             top: 50%;
             right: 20%;
             transform: translateY(-50%);
+
             img {
                 vertical-align: middle;
                 padding-right: 30px;
             }
         }
+
         .app-item-til-l {
             position: absolute;
             top: 50%;
             left: 20%;
             transform: translateY(-50%);
+
             img {
                 vertical-align: middle;
                 padding-left: 30px;
@@ -172,37 +220,53 @@
     h2 {
         text-align: center;
     }
+
     .contact-item {
         margin: 50px auto;
+
         >div {
-            width: calc(100%/2 - 60px);
+            width: calc(100%/2);
         }
+
         &::after {
             clear: both;
             content: "";
             display: block;
             visibility: hidden;
         }
+
         .company-info {
             box-shadow: 0px 3px 6px #00000017;
-            width: 50%;
             float: left;
             display: flex;
             align-items: center;
             justify-content: center;
             padding: 60px 0;
+
             .company-info-item {
                 padding-left: 60px;
+
                 li {
                     padding-bottom: 10px;
+                    .bi {
+                        margin-right: 10px;
+                    }
                 }
+
                 p {
                     color: #707070;
                 }
             }
         }
+
         .info-form {
             float: right;
+
+            form {
+                margin-left: 60px;
+                text-align: center;
+            }
+
             .form-control {
                 width: 100%;
                 border: 1px solid #CCCCCC;
@@ -210,16 +274,35 @@
                 padding: 15px 25px;
                 font-size: 14px;
                 display: block;
+                border-radius: 0;
+            }
+
+            .code-groud {
                 .code_left {
                     float: left;
+                    width: 40%;
+                    margin-right: 20px;
                 }
+
                 .code_right {
                     float: left;
                 }
+
+                &::after {
+                    content: "";
+                    clear: both;
+                    display: block;
+                    visibility: hidden;
+                }
             }
+
             .btn-primary {
-                margin: 50px;
-            } 
+                margin: 50px auto 0;
+                padding: 18px 76px;
+                border-radius: 0;
+                background: #F6AB00;
+                border: 0;
+            }
         }
     }
 }
@@ -228,19 +311,23 @@
 .footer {
     background: #707070;
     padding: 12px 0;
+
     p {
         font-size: 15px;
         color: #fff;
+
         &:first-child {
             float: left;
             line-height: 1;
             padding: 0;
         }
+
         &:last-child {
             float: right;
             line-height: 1;
             padding: 0;
         }
+
         a {
             font-size: 15px;
             color: #fff;

@@ -57,9 +57,8 @@ body{
 }
 
 a{
-    text-decoration:none; 
-    // blr:expression(this.onFocus=this.blur()); 
-    // noFocusLine:expression(this.onFocus=this.blur());     
+    font-size: 20px;
+    text-decoration:none;   
     transition: 0.5s; 
     background-color:none; 
     color:$main-txt-color;
@@ -85,6 +84,13 @@ a{
 }
 a*{
     transition: 0.5s;
+}
+
+.feature a img, .contact button img {
+    border: none;
+    margin-left: 6px;
+    height: 15px;
+    vertical-align: baseline;
 }
 
 .table-container{

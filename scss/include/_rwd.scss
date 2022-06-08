@@ -14,7 +14,11 @@ $mq-laptop-l : 1680px !default;
 $mq-laptop-xl : 1900px !default;
 
 $animation_size:1300px !default;
-
+@media (min-width: 1920px) {
+	max-width: 100%;
+    padding: 0;
+    margin: 0;
+}
 @mixin animation_size{
 	@media (max-width : $animation_size) {
 		@content;
