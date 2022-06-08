@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="259" height="71.143" viewBox="0 0 259 71.143">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffb400"/>
+      <stop offset="0.069" stop-color="#ffa202"/>
+      <stop offset="0.308" stop-color="#ff6809"/>
+      <stop offset="0.53" stop-color="#ff3b0f"/>
+      <stop offset="0.726" stop-color="#ff1b13"/>
+      <stop offset="0.889" stop-color="#ff0716"/>
+      <stop offset="1" stop-color="#ff0017"/>
+    </linearGradient>
+  </defs>
+  <g id="logo" transform="translate(-130 -27)">
+    <g id="Group_1" data-name="Group 1" transform="translate(130 27)">
+      <path id="Path_1" data-name="Path 1" d="M338.45,77.706l-7.5,2.731L320.4,84.274l-4.578,1.666v15.231l22.624-8.234h0l7.615-2.771V82.55h0C346.065,78.344,342.656,76.175,338.45,77.706Z" transform="translate(-265.608 -77.215)" fill="url(#linear-gradient)"/>
+      <path id="Path_2" data-name="Path 2" d="M338.45,169.985l-7.5,2.732L320.4,176.553l-4.578,1.666v15.231l22.624-8.234h0l7.615-2.771v-7.616h0C346.065,170.623,342.656,168.454,338.45,169.985Z" transform="translate(-265.608 -129.193)" fill="url(#linear-gradient)"/>
+      <path id="Path_3" data-name="Path 3" d="M287.761,100.26l-7.615,2.772h0c-4.206,1.531-7.616,6.181-7.616,10.388v47.919l15.231-5.544V107.876h0Z" transform="translate(-241.221 -90.196)" fill="url(#linear-gradient)"/>
+      <path id="Path_4" data-name="Path 4" d="M216.859,136.35h0l-3.324-4.043-1.873-2.28-7.132,2.6h0c-3.966,1.4-4.878,5.336-2.035,8.793l5.072,6.168L214.4,155.9l3.483,4.24,14.261-5.195-4.936-6Z" transform="translate(-200.839 -106.962)" fill="url(#linear-gradient)"/>
+    </g>
+    <text id="永強熱處理_股份有限公司" data-name="永強熱處理
+股份有限公司" transform="translate(233 50)" fill="#fff" font-size="26" font-family="NotoSansCJKtc-Regular, Noto Sans CJK TC"><tspan x="0" y="0">永強熱處理</tspan><tspan x="0" y="43">股份有限公司</tspan></text>
+  </g>
+</svg>

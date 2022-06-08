@@ -1,0 +1,117 @@
+$mq-mobile-s-portrait : 319px !default; //374
+$mq-mobile-m-portrait : 359px !default; //375
+$mq-mobile-l-portrait : 480px !default; //425
+$mq-mobile-ll-portrait : 600px !default;
+$mq-mobile-xl-portrait : 767px !default;
+$mq-tablet-portrait : 768px !default;
+$mq-tablet : 991px !default; //991
+// $mq-min-tablet : 992px !default;
+//$mq-tablet-landscape : 1024px !default;
+$mq-laptop-s : 1199px !default; //1200
+$mq-notebook : 1340px !default; //1366
+$mq-laptop : 1399px !default; //1440
+$mq-laptop-l : 1680px !default;
+$mq-laptop-xl : 1900px !default;
+
+$animation_size:1300px !default;
+
+@mixin animation_size{
+	@media (max-width : $animation_size) {
+		@content;
+	}
+}
+
+@mixin custom-size($size) {
+	@media (max-width : $size) {
+		@content;
+	}
+}
+@mixin custom-min-size($size) {
+	@media (min-width : $size) {
+		@content;
+	}
+}
+@mixin mobile-s { //319
+	@media (max-width : $mq-mobile-s-portrait) {
+		@content;
+	}
+}
+
+
+@mixin mobile-s { //319
+	@media (max-width : $mq-mobile-s-portrait) {
+		@content;
+	}
+}
+
+@mixin mobile-m { //359 - 320
+	@media (max-width : $mq-mobile-m-portrait) {
+		@content;
+	}
+}
+
+@mixin mobile-l { //480 - 360
+	@media (max-width : $mq-mobile-l-portrait) {
+		@content;
+	}
+}
+
+@mixin mobile-ll{ //600 - 481
+	@media (max-width : $mq-mobile-ll-portrait) {
+		@content;
+	}
+}
+
+@mixin mobile-xl{ //767 - 601
+	@media (max-width : $mq-mobile-xl-portrait) {
+		@content;
+	}
+}
+ @mixin tablet-s{ //768
+ 	@media (max-width : $mq-tablet-portrait) {
+ 		@content;
+ 	}
+ }
+@mixin tablet-m{ //991 - 768
+	@media (max-width : $mq-tablet) {
+		@content;
+	}
+}
+@mixin laptop-s{ //1199 - 992
+	@media (max-width : $mq-laptop-s) {
+		@content;
+	}
+}
+@mixin laptop-m{ //1340 - 1200
+	@media (max-width : $mq-notebook) {
+		@content;
+	}
+}
+@mixin laptop { //1399 - 1341
+	@media (max-width : $mq-laptop) {
+		@content;
+	}
+}
+
+@mixin laptop-l { //1680 - 1400
+	@media (max-width : $mq-laptop-l) {
+		@content;
+	}
+}
+@mixin laptop-xl { //1900 -1681
+	@media (max-width : $mq-laptop-xl) {
+		@content;
+	}
+}
+
+//min-width
+@mixin min-laptop-l { //大於1680
+	@media (min-width : $mq-laptop-l) {
+		@content;
+	}
+}
+// @mixin min-tablet {
+// 	@media (min-width : $mq-min-tablet) {
+// 		@content;
+// 	}
+// }

@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="158" height="141" viewBox="0 0 158 141">
+  <defs>
+    <linearGradient id="linear-gradient" y1="0.5" x2="1" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ffb400"/>
+      <stop offset="0.069" stop-color="#ffa202"/>
+      <stop offset="0.308" stop-color="#ff6809"/>
+      <stop offset="0.53" stop-color="#ff3b0f"/>
+      <stop offset="0.726" stop-color="#ff1b13"/>
+      <stop offset="0.889" stop-color="#ff0716"/>
+      <stop offset="1" stop-color="#ff0017"/>
+    </linearGradient>
+  </defs>
+  <g id="foot-logo" transform="translate(-234 -5034)">
+    <g id="Group_3" data-name="Group 3" transform="translate(270 5034)">
+      <path id="Path_1" data-name="Path 1" d="M340.287,77.746,332.174,80.7l-11.4,4.149-4.949,1.8v16.468l24.461-8.9h0l8.233-3V82.983h0C348.521,78.436,344.834,76.091,340.287,77.746Z" transform="translate(-261.531 -77.215)" fill="url(#linear-gradient)"/>
+      <path id="Path_2" data-name="Path 2" d="M340.287,170.025l-8.114,2.954-11.4,4.148-4.949,1.8V195.4l24.461-8.9h0l8.233-3v-8.234h0C348.521,170.715,344.834,168.37,340.287,170.025Z" transform="translate(-261.531 -125.921)" fill="url(#linear-gradient)"/>
+      <path id="Path_3" data-name="Path 3" d="M289,100.26l-8.234,3h0c-4.548,1.656-8.234,6.683-8.234,11.231V166.3L289,160.3v-51.81h0Z" transform="translate(-238.679 -89.378)" fill="url(#linear-gradient)"/>
+      <path id="Path_4" data-name="Path 4" d="M218.159,136.863h0l-3.594-4.371-2.025-2.465-7.711,2.807h0c-4.288,1.512-5.274,5.769-2.2,9.507l5.484,6.669L215.506,158l3.766,4.584,15.419-5.617-5.337-6.49Z" transform="translate(-200.839 -105.09)" fill="url(#linear-gradient)"/>
+    </g>
+    <text id="永_強_熱_處_理_股_份_有_限_公_司" data-name="永 強 熱 處 理
+股 份 有 限 公 司" transform="translate(313 5145)" fill="#707070" font-size="22" font-family="NotoSansCJKtc-Medium, Noto Sans CJK TC" font-weight="500"><tspan x="-64.9" y="0">永 強 熱 處 理</tspan><tspan x="-78.375" y="27">股 份 有 限 公 司</tspan></text>
+  </g>
+</svg>
