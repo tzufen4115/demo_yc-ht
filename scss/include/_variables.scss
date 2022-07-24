@@ -2,55 +2,21 @@
 $main-color: #000 !default; 
 $second-color: #646464 !default; 
 $header-color: #000 !default; //h1
-$hover-color: #6596d8 !default;
+$hover-color: #DC0017 !default;
 $main-txt-color:#222222 !default;
-$main-link-color:#111 !default;
-$main-link-color-hover:#222 !default;
-$bg-color: #2C486A !default;
+$main-link-color:#707070 !default;
+$main-link-color-hover:#DC0017 !default;
+$bg-color: #ffffff !default;
 $bg-sub-color: #96AECE !default;
 $bg-gray: #F0F1F2 !default;
 
-$arrow-color: #96AECE !default;
+$arrow-color: #ffffff !default;
 $slide-dots-color: #AFC2D8 !default;
 $slide-dots-color-active: #607791 !default;
 
-$probg-color1:#FFFAA8 !default;
-$probg-color2: #E9EFA8 !default;
-$probg-color3:#DFF5D1 !default;
-$probg-color4: #D5F0EA !default;
-$probg-color5:#D7D9DD !default;
-$probg-color6: #D5CFC7 !default;
-$probg-color7: #E6E2CC !default;
-$probg-color8: #E2CF9B !default;
-$probg-color9: #D1F1F8 !default;
-$probg-color10:#C6D4DE !default;
-$probg-color11: #CAE0FA !default;
-$probg-color12: #D0D2FD !default;
-
-$tablebg-color1-th:#FDF773 !default;
-$tablebg-color1:#FFFAA8 !default;
-$tablebg-color2-th: #C8DD85 !default;
-$tablebg-color2:#E9EFA8 !default;
-$tablebg-color3-th: #B6DE9D !default;
-$tablebg-color3:#DFF5D1 !default;
-$tablebg-color4-th: #B3E8DE !default;
-$tablebg-color4:#D5F0EA !default;
-$tablebg-color5-th: #C1C1C2 !default;
-$tablebg-color5: #D7D9DD !default;
-$tablebg-color6-th: #C6B7A2 !default;
-$tablebg-color6: #D5CFC7 !default;
-$tablebg-color7-th: #DDD29E !default;
-$tablebg-color7:  #E6E2CC !default;
-$tablebg-color8-th: #D6B968 !default;
-$tablebg-color8: #E2CF9B !default;
-$tablebg-color9-th: #98D8EB !default;
-$tablebg-color9: #D1F1F8 !default;
-$tablebg-color10-th: #A0BCD1 !default;
-$tablebg-color10:#C6D4DE !default;
-$tablebg-color11-th: #A6C6ED !default;
-$tablebg-color11:#CAE0FA !default;
-$tablebg-color12-th: #B0B2E2 !default;
-$tablebg-color12: #D0D2FD !default;
+$tablebg-color1-th:#535353 !default;
+$tablebg-color1-td:#ffffff !default;
+$tablebg-color2-td:#EEEDEC !default;
 
 
 $main-size: 18px;
@@ -75,7 +41,7 @@ $btn-info-hover-color: #e72e35 !default; //#857777
 $btn-info-disabled-color: #bdb4b4 !default;
 
 
-$default-font-family: 'Noto Sans TC', "微軟正黑體", \5FAE\8EDF\6B63\9ED1\9AD4, "Microsoft JhengHei", "微软雅黑", "メイリオ", "맑은 고딕", sans-serif;
+$default-font-family: 'Noto Sans TC', "敺株��迤暺煾��", \5FAE\8EDF\6B63\9ED1\9AD4, "Microsoft JhengHei", "敺株蔓��暺�", "�～�扎�芥��", "諤𡢾� 窸𧙖��", sans-serif;
 $table-font-family:'Noto Sans TC', sans-serif;
 $header-height : 94px;
 

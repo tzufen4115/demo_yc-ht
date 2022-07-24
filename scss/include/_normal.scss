@@ -1,148 +1,255 @@
 @import "_variables.scss";
+
 //reset
-img { max-width:100%; }
+img {
+    max-width: 100%;
+}
 
 /*css reset*/
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var,b, u, i, center,dl, dt, dd, ol, ul, li,fieldset, form, label, legend,table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary,time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, 
+abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, 
+strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, 
+table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, 
+figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
     display: block;
 }
-ol, ul {
+
+ol,
+ul {
     list-style: none;
     font-size: 18px;
     color: #707070;
+    @include laptop-l {
+        font-size: 16px;
+    }
 }
-blockquote, q {
+
+blockquote,
+q {
     quotes: none;
 }
-blockquote:before, blockquote:after,q:before, q:after {	
-    content: ''; 
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
     content: none;
 }
-table {	
-    border-collapse: collapse;	
+
+table {
+    border-collapse: collapse;
     border-spacing: 0;
 }
+
 
 h2 {
     font-size: 40px;
     font-weight: Bold;
-    margin-bottom: 30px;
+    margin-bottom: 2vh;
+    position: relative;
+    z-index: 2;
+    @include laptop-l {
+        font-size: 32px;
+    }
+    @include tablet-m {
+        font-size: 26px;
+    }
+
+    &::before {
+        content: "";
+        position: absolute;
+        background: url(../images/icon-h.svg) no-repeat;
+        width: 100px;
+        height: 100px;
+        top: -27px;
+        left: -42px;
+        z-index: -1;
+        @include laptop-l {
+            width: 60px;
+            height: 60px;
+            top: -10px;
+            left: -20px;
+        }
+    }
+}
+
+.contact h2 {
+    &::before {
+        left: 43.5%;
+        @include laptop-l {
+            width: 60px;
+            height: 60px;
+            top: -12px;
+            left: 41.8%;
+        }
+    }
+}
+
+.pro-app h2 {
+    &::before {
+        content: none;
+    }
 }
 
 h3 {
     font-size: 25px;
+    @include laptop-l {
+        font-size: 22px;
+    }
+    @include tablet-m {
+        font-size: 20px;
+    }
 }
 
-p{ 
-    padding:0 0 10px 0; 
+p {
+    padding: 0 0 10px 0;
     font-size: 18px;
     line-height: 1.7;
+    @include laptop-l {
+        font-size: 16px;
+    }
 }
 
-body{
-    color: $main-txt-color; 
-    font-family:$default-font-family;
-    margin: 0; 
+body {
+    color: $main-txt-color;
+    font-family: $default-font-family;
+    margin: 0;
     padding: 0;
     position: relative;
 }
 
-a{
-    font-size: 20px;
-    text-decoration:none;   
-    transition: 0.5s; 
-    background-color:none; 
-    color:$main-txt-color;
+a {
+    font-size: 18px;
+    text-decoration: none;
+    transition: 0.5s;
+    background-color: none;
+    color: $main-link-color;
+    @include laptop-l {
+        font-size: 16px;
+    }
+
     &:hover {
         //text-decoration:none; 
-        background:none; 
-        transition: 0.5s; 
-        color:$hover-color;
+        background: none;
+        transition: 0.5s;
+        color: $hover-color;
     }
-    &:focus{
-        color:$hover-color;
+
+    &:focus {
+        color: $hover-color;
     }
+
     img {
-        border:none;
+        border: none;
     }
-    &:focus {  
-        outline:none; 
-        text-decoration:none;
-    } 
+
+    &:focus {
+        outline: none;
+        text-decoration: none;
+    }
 }
-.active a{ 
-    color:$hover-color;
+
+.active a {
+    color: $hover-color;
 }
-a*{
+
+a* {
     transition: 0.5s;
 }
 
-.feature a img, .contact button img {
+.feature a img,
+.contact button img {
     border: none;
     margin-left: 6px;
     height: 15px;
     vertical-align: baseline;
 }
 
-.table-container{
-    width: 100%;	
-    overflow-y: auto;	
+.table-container {
+    width: 100%;
+    overflow-y: auto;
     margin: 20px 0;
-    @include mobile-ll{
-        padding:20px 0;
+
+    @include mobile-ll {
+        padding: 20px 0;
     }
 
 }
-.table-container::-webkit-scrollbar{	
-    -webkit-appearance: none; 
-    width: 14px; 
+
+.table-container::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 14px;
     height: 14px;
 }
-.table-container::-webkit-scrollbar-thumb{	
-    border-radius: 8px;	
-    border: 3px solid #ddd;	
+
+.table-container::-webkit-scrollbar-thumb {
+    border-radius: 8px;
+    border: 3px solid #ddd;
 }
 
-#container{
+#container {
     position: relative;
-    overflow:hidden; 
+    overflow: hidden;
     min-height: auto !important;
 }
+
+.header-wrap {
+    max-width: 1720px;
+    padding: 0 30px;
+    margin: 0 auto;
+}
+
+.wrap {
+    max-width: 1660px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
 .wrap:after {
-    clear: both; 
-    content: " "; 
-    display: block; 
-    height: 0; 
+    clear: both;
+    content: " ";
+    display: block;
+    height: 0;
     visibility: hidden;
 }
-.header-wrap {
-    width: 1600px;
-    margin:0 auto;
+
+.popup-button {
+    font-size: 20px;
+    @include laptop-l {
+        font-size: 16px;
+    }
+    display: inline-block;
+    background: #F6AB00;
+    padding: 1em 3em;
+    margin: 10px;
+    color: #fff;
+    transition: ease-in;
+    border: 0;
+    border-radius: 0;
+    min-width: 230px;
+
+    &:hover {
+        background-image: linear-gradient(to right, #DC0017, #F99900);
+        color: #fff;
+    }
 }
-.wrap{
-    width: 1540px;
-    margin:0 auto;
-    padding: 0 30px;
-} 
-//////////////////
-
-
-
-
-
-
-
-
-
-
-
-

@@ -14,11 +14,9 @@ $mq-laptop-l : 1680px !default;
 $mq-laptop-xl : 1900px !default;
 
 $animation_size:1300px !default;
-@media (min-width: 1920px) {
-	max-width: 100%;
-    padding: 0;
-    margin: 0;
-}
+
+
+
 @mixin animation_size{
 	@media (max-width : $animation_size) {
 		@content;
@@ -109,7 +107,7 @@ $animation_size:1300px !default;
 }
 
 //min-width
-@mixin min-laptop-l { //大於1680
+@mixin min-laptop-l { //憭扳䲰1680
 	@media (min-width : $mq-laptop-l) {
 		@content;
 	}
